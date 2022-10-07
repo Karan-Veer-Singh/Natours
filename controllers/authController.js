@@ -254,3 +254,15 @@ exports.updatePassword = catchAsync(async (req, res, next) => {
   // 4) Log user in, send JWT
   createSendToken(user, 200, res);
 });
+
+////////////////////////////////////////////////////////////////////////////////////////
+// Using this so that we do not get access to the page when press back button
+
+exports.controllCacheHeader = (req, res, next) => {
+  res.setHeader('Cache-Control', 'no-cache, no-store, must-revalidate');
+  res.setHeader('Pragma', 'no-cache');
+  res.setHeader('Expires', '0');
+  res.removeHeader('Cross-Origin-Resource-Policy');
+  res.removeHeader('Cross-Origin-Embedder-Policy');
+  next();
+};
