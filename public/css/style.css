@@ -1,5 +1,5 @@
 :root {
-  --section-rotate: 9vw;
+  /* --section-rotate: 9vw; */
 }
 
 ::-moz-selection {
@@ -41,6 +41,7 @@ body {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
+  background-color: #f7f7f7;
 }
 
 .main {
@@ -368,14 +369,14 @@ body {
   position: absolute;
   width: 100%;
   height: 100%;
-  background-image: -webkit-gradient(
+  /* background-image: -webkit-gradient(
     linear,
     left top,
     right bottom,
     from(#7dd56f),
     to(#28b487)
   );
-  background-image: linear-gradient(to right bottom, #7dd56f, #28b487);
+  background-image: linear-gradient(to right bottom, #7dd56f, #28b487); */
   opacity: 0.85;
 }
 
@@ -432,10 +433,12 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  padding-bottom: 30px;
 }
 .section-description > * {
   padding: 0 8vw;
-  padding-top: 14vw;
+  /* padding-top: 14vw; */
+  padding-top: 9vw;
   padding-bottom: calc(1vw + var(--section-rotate));
   -webkit-box-flex: 0;
   -ms-flex: 0 0 50%;
@@ -460,6 +463,7 @@ body {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
+  padding-bottom: 50px;
 }
 .overview-box__group:not(:last-child) {
   margin-bottom: 7rem;
@@ -519,6 +523,7 @@ body {
   margin-top: calc(0px - var(--section-rotate));
   position: relative;
   z-index: 1000;
+  padding-bottom: 50px;
 }
 
 .picture-box__img {
@@ -529,19 +534,20 @@ body {
   object-fit: cover;
 }
 .picture-box__img--1 {
-  padding-top: 15%;
+  /* padding-top: 15%; */
 }
 .picture-box__img--2 {
-  padding-bottom: 15%;
+  /* padding-bottom: 15%; */
 }
 .picture-box__img--3 {
-  padding-bottom: 27%;
+  /* padding-bottom: 27%; */
 }
 
 .section-map {
   position: relative;
   height: 65rem;
   margin-top: calc(0px - var(--section-rotate));
+  margin-bottom: 20px;
 }
 
 #map {
@@ -603,6 +609,8 @@ body {
     100% calc(100% - var(--section-rotate)),
     0 100%
   );
+  padding-bottom: 50px;
+  margin-bottom: 50px;
 }
 
 .reviews {
@@ -709,6 +717,7 @@ body {
   padding-bottom: 11rem;
   padding-top: calc(15rem + var(--section-rotate));
   background-color: #f7f7f7;
+  padding-top: 50px;
 }
 
 .cta {
@@ -1137,14 +1146,14 @@ body {
   position: absolute;
   width: 100%;
   height: 100%;
-  background-image: -webkit-gradient(
+  /* background-image: -webkit-gradient(
     linear,
     left top,
     right bottom,
     from(#7dd56f),
     to(#28b487)
   );
-  background-image: linear-gradient(to right bottom, #7dd56f, #28b487);
+  background-image: linear-gradient(to right bottom, #7dd56f, #28b487); */
   opacity: 0.7;
 }
 .card__picture-img {
