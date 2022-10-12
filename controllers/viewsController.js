@@ -93,3 +93,18 @@ exports.getMyTours = catchAsync(async (req, res, next) => {
 //     user: updatedUser
 //   });
 // });
+
+exports.getForgotPassword = (req, res) => {
+  res.status(200).render('forgotPassword', {
+    title: 'FORGOT PASSWORD'
+  });
+};
+
+exports.getResetPassword = (req, res) => {
+  const { token } = req.params;
+
+  res.status(200).render('resetPassword', {
+    title: 'RESET PASSWORD',
+    token
+  });
+};

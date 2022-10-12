@@ -5,6 +5,7 @@ import { updateSettings } from './updateSettings';
 import { signup } from './signup';
 import { bookTour } from './stripe';
 import { showAlert } from './alerts';
+import { forgotPassword, resetPassword } from './forgotPassword';
 
 // DOM ELEMENTS
 const loginForm = document.querySelector('.form--login');
@@ -13,6 +14,8 @@ const logOutBtn = document.querySelector('.nav__el--logout');
 const userDataForm = document.querySelector('.form-user-data');
 const userPasswordForm = document.querySelector('.form-user-password');
 const bookBtn = document.getElementById('book-tour');
+const forgotPasswordForm = document.querySelector('.form--forgotPassword');
+const resetPasswordForm = document.querySelector('.form--resetPassword');
 
 // DELEGATION
 if (loginForm)
@@ -71,6 +74,23 @@ if (bookBtn)
     e.target.textContent = 'Processing...';
     const { tourId } = e.target.dataset;
     bookTour(tourId);
+  });
+
+if (forgotPasswordForm)
+  forgotPasswordForm.addEventListener('submit', e => {
+    e.preventDefault();
+    const email = document.getElementById('email').value;
+    forgotPassword(email);
+  });
+
+if (resetPasswordForm)
+  resetPasswordForm.addEventListener('submit', e => {
+    e.preventDefault();
+    const el = document.querySelector('#check');
+    const token = el.dataset.token;
+    const password = document.getElementById('password').value;
+    const passwordConfirm = document.getElementById('password-confirm').value;
+    resetPassword(password, passwordConfirm, token);
   });
 
 const alertMessage = document.querySelector('body').dataset.alert;

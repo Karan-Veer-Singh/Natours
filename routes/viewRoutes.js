@@ -44,6 +44,18 @@ router.get(
   authController.controllCacheHeader,
   viewsController.getMyTours
 );
+router.get(
+  '/forgotPassword',
+  authController.isLoggedIn,
+  authController.controllCacheHeader,
+  viewsController.getForgotPassword
+);
+router.get(
+  '/resetPassword/:token',
+  authController.isLoggedIn,
+  authController.controllCacheHeader,
+  viewsController.getResetPassword
+);
 
 //////////////////////////////////////////////////////////////////////////////////
 

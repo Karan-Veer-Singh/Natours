@@ -1311,6 +1311,22 @@ body {
   margin-bottom: 0.75rem;
 }
 
+.form__forgot-password {
+  display: block;
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin-bottom: 0.75rem;
+  margin-top: 1.25rem;
+  text-decoration: none;
+  color: rgb(92, 89, 89);
+}
+
+.form__forgot-password:hover {
+  -webkit-transform: translateY(-2px);
+  transform: translateY(-2px);
+  text-shadow: 0 0.2rem 1rem grey;
+}
+
 .form__photo-upload {
   display: -webkit-box;
   display: -ms-flexbox;
