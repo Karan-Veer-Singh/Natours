@@ -25,6 +25,7 @@ html {
   font-size: 62.5%;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -32,7 +33,7 @@ body {
   font-weight: 300;
   font-family: 'Lato', sans-serif;
   color: #777;
-  padding: 3rem;
+  /* padding: 3rem; */
   min-height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -300,7 +301,8 @@ body {
 }
 
 .header {
-  background-color: #444;
+  /* background-color: #444; */
+  background-color: #55c57a;
   padding: 0 5rem;
   height: 8rem;
   position: relative;
@@ -1375,4 +1377,19 @@ body {
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
   -webkit-transform: translateY(-2px);
   transform: translateY(-2px);
+}
+
+.new {
+  height: 90vh;
+  width: 100%;
+  background-image: url('../img/tours/tour-1-cover.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.explore {
+  position: absolute;
+  left: 45%;
+  top: 70%;
 }

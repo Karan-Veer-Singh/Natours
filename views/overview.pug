@@ -1,7 +1,10 @@
 extends base
 
 block content
-  main.main
+  .new
+    a.btn.btn--green.explore(href=`#main`) EXPLORE
+
+  main#main.main
     .card-container
     
       each tour in tours
