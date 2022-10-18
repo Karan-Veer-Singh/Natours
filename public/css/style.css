@@ -449,6 +449,12 @@ body {
   flex: 0 0 50%;
 }
 
+@media only screen and (max-width: 50em) {
+  .section-description {
+    display: grid;
+  }
+}
+
 .description-box .description {
   margin-right: 5rem;
 }
@@ -893,6 +899,9 @@ body {
 @media only screen and (max-width: 50em) {
   .footer__copyright {
     justify-self: center;
+  }
+  .footer__nav li {
+    margin-left: 0.5rem;
   }
 }
 
