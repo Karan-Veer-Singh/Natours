@@ -545,6 +545,14 @@ body {
   padding-bottom: 50px;
 }
 
+@media only screen and (max-width: 50em) {
+  .section-pictures {
+    display: grid;
+    grid-gap: 4%;
+    margin-bottom: 18%;
+  }
+}
+
 .picture-box__img {
   display: block;
   width: 100%;
