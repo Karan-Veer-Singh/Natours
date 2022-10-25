@@ -10,7 +10,7 @@ const locations = JSON.parse(document.getElementById('map').dataset.locations);
 // Create the map and attach it to the #map
 // ----------------------------------------------
 
-const map = L.map('map', { zoomControl: false });
+const map = L.map('map', { zoomControl: false, dragging: !L.Browser.mobile });
 
 // ----------------------------------------------
 // Add a tile layer to add to our map
