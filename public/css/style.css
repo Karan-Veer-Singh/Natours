@@ -1498,10 +1498,12 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
+  display: flex;
+  justify-content: center;
 }
 
 .explore {
-  position: absolute;
-  left: 45%;
+  /* position: absolute;
+  left: 45%; */
   top: 70%;
 }
